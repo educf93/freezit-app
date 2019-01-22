@@ -1,0 +1,5 @@
+<div class="task">
+  <h2 *ngIf="!editingTaskName">{{task.text}}</h2>
+  <input *ngIf="editingTaskName" [(ngModel)]="task.text" (keyup.enter)="editTaskName($event)">
+  <span title="Edit task name" (click)="edit()">✏️</span>
+</div>

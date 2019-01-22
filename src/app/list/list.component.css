@@ -1,0 +1,68 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid black; 
+    margin: 50px;
+    box-shadow: 3px 2px gray;
+    background-color: #f4e242;
+    min-width: 350px;
+}
+.listHeader{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.listOptions{
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: auto;
+    margin-left:10px;
+}
+h1{
+    all:unset;
+    width: auto;
+    font-style: bold;
+    font-size: 20pt;
+}
+.deleteTasks {
+	-moz-box-shadow: 3px 4px 0px 0px #fff48c;
+	-webkit-box-shadow: 3px 4px 0px 0px #fff48c;
+	box-shadow: 3px 4px 0px 0px #fff48c;
+	background-color:transparent;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:2px solid #050505;
+	display:inline-block;
+	cursor:pointer;
+	color:#0d0d0d;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.deleteTasks:hover {
+    background-color:transparent;
+    box-shadow: none;
+}
+.deleteTasks:active {
+	position:relative;
+	top:1px;
+}
+.tasks{
+    background-color: #fff48c;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.addtask{
+    all:unset;
+    border-bottom: 2px solid black;
+    outline: none;
+}

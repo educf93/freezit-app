@@ -1,0 +1,7 @@
+.task{
+    display: flex;
+}
+.task>span{
+    cursor: pointer;
+    margin-left: 10px;
+}

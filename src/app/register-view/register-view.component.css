@@ -1,0 +1,65 @@
+.container_login{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-image: radial-gradient( white,silver);
+}
+.list{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black; 
+    box-shadow: 3px 2px gray;
+    background-color: #f4e242;
+    width: 30%;
+    height: 200px;
+    margin-top: 100px;
+    min-width: 150px;
+}
+.listAd{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black; 
+    box-shadow: 3px 2px gray;
+    background-color: #f4e242;
+    width: auto;
+    height: auto;
+    color: red
+}
+.list>input[type="text"]{
+    all:unset;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.list>input[type="password"]{
+    all:unset;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin-top: 30px;
+}.list>input[type="button"]{
+    margin-top: 30px;
+    -moz-box-shadow: 3px 4px 0px 0px #fff48c;
+	-webkit-box-shadow: 3px 4px 0px 0px #fff48c;
+	box-shadow: 3px 4px 0px 0px #fff48c;
+	background-color:transparent;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:2px solid #050505;
+	display:inline-block;
+	cursor:pointer;
+	color:#0d0d0d;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.list>input[type="button"]:hover{
+    box-shadow: none;
+}

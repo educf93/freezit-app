@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="container_login">
+  <div class="list">
+    <input placeholder="username" type="text" [(ngModel)]="username" name="username">
+    <input placeholder="password" type="password" [(ngModel)]="password" name="password" (keyup.enter)="login()">
+    <input type="button" (click)="login()" value="Login">
+  </div>
+  <div class="listAd" *ngIf="error">
+    <h3>⚠️ {{error}}</h3>
+  </div>
+</div>

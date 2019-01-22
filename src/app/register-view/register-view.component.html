@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div class="container_login">
+  <div class="list">
+    <input placeholder="username" type="text" [(ngModel)]="username" name="username" maxlength="25">
+    <input placeholder="password" type="password" [(ngModel)]="password" name="password" maxlength="25" (keyup.enter)="register()">
+    <input type="button" (click)="register()" value="Register">
+  </div>
+  <div class="listAd" *ngIf="error">
+      <h3>⚠️Username and password can not be empty. </h3>
+  </div>
+  <div class="listAd" *ngIf="valid">
+    <h3 style="color:black">✔️Register successful, redirecting to login...</h3>
+  </div>
+</div>

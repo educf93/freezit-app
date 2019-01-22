@@ -1,0 +1,19 @@
+<div class="list">
+  <div class="listHeader">
+    <h1 *ngIf="!editingName">{{list.name}}</h1>
+    <input *ngIf="editingName" [(ngModel)]="list.name" (keyup.enter)="changeNameList($event)" (change)="cancelEdit($event)">
+    <div class="listOptions" (mouseenter)="options(true)" (mouseleave)="options(false)">
+      <span *ngIf="!showOptions">🛠</span>
+      <div *ngIf="showOptions">
+        <span title="Edit list" (click)="editNameList()">✏️</span>
+        <span title="Delete list" (click)="delete(list.listId,list.tasks.length)">❌</span>
+      </div>
+    </div>
+  </div>
+  <input type="button" class="deleteTasks" value="Delete tasks" (click)="deleteTask(list.listId)">
+  <div class="tasks">
+  <app-task *ngFor="let task of list.tasks" [task]="task"></app-task>
+  <input class="addtask" type="text" placeholder="Add a new task..." (keyup.enter)="addNewTask($event)">
+</div>
+   
+</div>
